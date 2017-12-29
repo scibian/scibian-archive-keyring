@@ -1,0 +1,27 @@
+Source: scibian-archive-keyring
+Priority: important
+Section: scibian
+Maintainer: Scibian Packaging Team <packaging@scibian.org>
+Build-Depends: debhelper (>= 9), jetring, gnupg
+Standards-Version: 3.9.8
+
+Package: scibian-archive-keyring
+Architecture: all
+Multi-Arch: foreign
+Depends: gpgv, ${misc:Depends}
+Recommends: gnupg
+Description: GnuPG archive keys of the Scibian archive
+ The Scibian project digitally signs its Release files. This package
+ contains the archive keys used for that.
+
+Package: scibian-archive-keyring-udeb
+XC-Package-Type: udeb
+Priority: optional
+Architecture: all
+Section: debian-installer
+Depends: ${misc:Depends}
+Recommends: gpgv-udeb
+Description: GnuPG keys of the Scibian archive
+ The Scibian project digitally signs its Release files. This package
+ contains the archive keys used for that, in a minimal form for use
+ in the installer.
