@@ -1,3 +1,9 @@
+scibian-archive-keyring (20171230sci8) scibian8; urgency=medium
+
+  * Rebuild for scibian8.
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Thu, 18 Jan 2018 10:09:19 +0100
+
 scibian-archive-keyring (20171230) scibian9; urgency=medium
 
   * Initial release.
